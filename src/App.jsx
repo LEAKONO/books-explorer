@@ -5,7 +5,8 @@ import Books from './components/BookCard'
 function App() {
   return (
     <div>
-<Books/>
+    <h1 className=' font-extrabold text-center p-5 text-lg'>Books Explorer</h1>
+    <Books/>
     </div>
   )
 }

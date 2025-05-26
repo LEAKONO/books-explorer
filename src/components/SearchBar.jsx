@@ -10,7 +10,7 @@ function SearchBar({search,setSearch}) {
      value={search}
      placeholder='search books...'
      onChange={(e)=>setSearch(e.target.value)}
-    classname='p-2 '
+    className='p-2 border w-full border-black rounded'
 
      />
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 function FilterBar({ filtered }) {
   return (
-    <div>
+    <div className=' flex flex-wrap'>
       {filtered.map((book) => {
         return (
           <div
@@ -14,8 +14,8 @@ function FilterBar({ filtered }) {
               alt={book.title}
               className="w-24 h-32 object-cover rounded mb-2"
             />
-            <h1>{book.title}</h1>
-            <h3>{book.author}</h3>
+            <h1 className='text-lg bold font-bold '>{book.title}</h1>
+            <h3 >{book.author}</h3>
             <h3>{book.category}</h3>
           </div>
         );

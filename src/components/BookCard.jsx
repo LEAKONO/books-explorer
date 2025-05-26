@@ -10,7 +10,7 @@ function Books(){
       book.title.toLowerCase().includes(search.toLowerCase())
     )
     return(
-        <div>
+        <div className="p-5">
         <SearchBar search={search} setSearch={setSearch}/>
          <FilterBar filtered={filtered} />
 
