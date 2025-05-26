@@ -1,13 +1,21 @@
 import React from "react";
-import { useState,useEffect } from "react";
+import { useState } from "react";
 import FilterBar from './FilterBar'
 import SearchBar from './SearchBar'
-function books(){
-    const[books,setBooks]=useState([])
-    useEffect(()=>{
-
-    })
-    return(
-
+import { books as bookData } from "./data/books"; 
+function Books(){
+    const[books,setBooks]=useState(bookData);
+    const[search,setSearch]=useState("")
+   const filtered= books.filter(book=>
+      book.title.toLowerCase().includes(search.toLowerCase())
     )
+    return(
+        <div>
+        <SearchBar search={search} setSearch={setSearch}/>
+         <FilterBar filtered={filtered} />
+
+        </div>
+    
+    );
 }
+export default Books;
