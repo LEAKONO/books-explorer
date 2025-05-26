@@ -1,12 +1,52 @@
-# React + Vite
+# 📚 React Book Filter App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React app built with **Vite**, **Tailwind CSS**, and **ESLint**, showcasing a collection of books. Users can browse books by category, view details like author, and enjoy a clean grid-based layout.
 
-Currently, two official plugins are available:
+## 🔧 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ **React** – Component-based UI
+- ⚡ **Vite** – Fast build tool and dev server
+- 🎨 **Tailwind CSS** – Utility-first CSS for modern UI design
+- 🧹 **ESLint** – Code quality and formatting
+- 🗂️ **JavaScript Modules** – Structured data and reusable components
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+├── public/
+├── src/
+│   ├── components/
+│   │   └── FilterBar.jsx       # Displays books in a grid layout
+│   ├── data/
+│   │   └── books.js            # List of 50+ book objects
+│   ├── App.jsx                 # Main app logic
+│   └── main.jsx                # React entry point
+├── tailwind.config.js
+├── vite.config.js
+├── index.html
+└── package.json
+```
+
+## 🚀 Getting Started
+```bash 
+Clone the repo
+git clone https://github.com/LEAKONO/books-explorer.git
+
+cd books
+
+
+# Install dependencies
+npm install
+# Start the dev server
+npm run dev
+
+```
+## 💡 Features
+- 🗃️ Display over 50 books with cover, title, author, and category
+
+- 🔎 Filter books by category (extendable)
+
+- 🖼️ Responsive grid layout using Tailwind CSS
+
+- ✨ Clean and modern UI
+
